@@ -5,11 +5,14 @@ window.onload = function loadfn() {
 }
 
 window.turnChanger = function turnChanger() {
-	if (currentUser == "Mario") {
+	if (currentUser === "Mario") {
 		currentUser = "Juan";
+	} else if(currentUser === "Juan") {
+		  currentUser = "Josh";
 	} else {
-		currentUser = "Mario";
-	}
+	  currentUser = "Mario";
+	};
+
 
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
 }
