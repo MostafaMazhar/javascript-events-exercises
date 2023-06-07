@@ -1,4 +1,5 @@
-window.myEventListener = function myEventListener()
-{
-	//your code here
+window.myEventListener = function myEventListener(){
+
+document.getElementById('firstDiv').style.display = 'none';
+
 }
